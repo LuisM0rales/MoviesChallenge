@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "b703be5b-f412-46d9-9615-29af15bd2855",
+		"name": "MoviesChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "Create Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJlbWFpbCI6Im1vcmFsZXMubHVpczk0bG1AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwibmJmIjoxNjgxOTIwNDYzLCJleHAiOjE2ODE5MjQwNjMsImlhdCI6MTY4MTkyMDQ2MywiaXNzIjoiQVBJQXVkaWVuY2VNb3ZpZSIsImF1ZCI6IkFQSUF1ZGllbmNlTW92aWUifQ._RSccCrw9w4vZ2ZRX5MqRzAucIPoNwsBfW7ykP3f3nk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Test\",\r\n  \"releaseYear\": 2023,\r\n  \"synopsis\": \"Test\",\r\n  \"poster\": \"Test\",\r\n  \"createdDate\": \"2023-04-19T14:51:40.593Z\",\r\n  \"categoryId\": 1,\r\n  \"userId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7056/api/Movies",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJlbWFpbCI6Im1vcmFsZXMubHVpczk0bG1AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwibmJmIjoxNjgxOTIwNDYzLCJleHAiOjE2ODE5MjQwNjMsImlhdCI6MTY4MTkyMDQ2MywiaXNzIjoiQVBJQXVkaWVuY2VNb3ZpZSIsImF1ZCI6IkFQSUF1ZGllbmNlTW92aWUifQ._RSccCrw9w4vZ2ZRX5MqRzAucIPoNwsBfW7ykP3f3nk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Spider-Man: No Way Home\",\r\n  \"releaseYear\": 2022,\r\n  \"synopsis\": \"PRuebas actualizacion\",\r\n  \"poster\": \"\",\r\n  \"createdDate\": \"2023-04-19T15:34:37.802Z\",\r\n  \"categoryId\": 1,\r\n  \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7056/api/Movies/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Movies",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJlbWFpbCI6Im1vcmFsZXMubHVpczk0bG1AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwibmJmIjoxNjgxOTIwNDYzLCJleHAiOjE2ODE5MjQwNjMsImlhdCI6MTY4MTkyMDQ2MywiaXNzIjoiQVBJQXVkaWVuY2VNb3ZpZSIsImF1ZCI6IkFQSUF1ZGllbmNlTW92aWUifQ._RSccCrw9w4vZ2ZRX5MqRzAucIPoNwsBfW7ykP3f3nk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7056/api/Movies/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Movies",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rating",
+			"item": [
+				{
+					"name": "Rate Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJlbWFpbCI6Im1vcmFsZXMubHVpczk0bG1AZ21haWwuY29tIiwibmJmIjoxNjgxOTE0NTExLCJleHAiOjE2ODE5MTgxMTEsImlhdCI6MTY4MTkxNDUxMSwiaXNzIjoiQVBJQXVkaWVuY2VNb3ZpZSIsImF1ZCI6IkFQSUF1ZGllbmNlTW92aWUifQ.eznKfY2WvjS7kavgHfHn0Q1HFko8Cux1FvxhEYW6Ztw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "5",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7056/api/Ratings?movieId=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Ratings"
+							],
+							"query": [
+								{
+									"key": "movieId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ratings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMiLCJlbWFpbCI6Im1vcmFsZXMubHVpczk0bG1AZ21haWwuY29tIiwibmJmIjoxNjgxOTE1Mzg3LCJleHAiOjE2ODE5MTg5ODcsImlhdCI6MTY4MTkxNTM4NywiaXNzIjoiQVBJQXVkaWVuY2VNb3ZpZSIsImF1ZCI6IkFQSUF1ZGllbmNlTW92aWUifQ.6TG1dEIfoZKWdV9cKzwfgUbUlM37IHgnFsL_4roQ3UI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7056/api/Ratings",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Ratings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7056/api/Users/authenticate?Email=user@normal.com&Pass=normal",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Users",
+								"authenticate"
+							],
+							"query": [
+								{
+									"key": "Email",
+									"value": "user@normal.com"
+								},
+								{
+									"key": "Pass",
+									"value": "normal"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"Test\",\r\n  \"password\": \"Test\",\r\n  \"roleId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7056/api/Users",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7056",
+							"path": [
+								"api",
+								"Users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

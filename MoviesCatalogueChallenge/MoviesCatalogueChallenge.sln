@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesCatalogueChallenge", "MoviesCatalogueChallenge.csproj", "{4F5E7D9B-EC99-4F1C-8927-908095CC664A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesCatalogueTests", "..\MoviesCatalogueTests\MoviesCatalogueTests.csproj", "{5BFB261E-9BA9-4013-9FBD-C98E04629620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F5E7D9B-EC99-4F1C-8927-908095CC664A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5E7D9B-EC99-4F1C-8927-908095CC664A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5E7D9B-EC99-4F1C-8927-908095CC664A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5E7D9B-EC99-4F1C-8927-908095CC664A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFB261E-9BA9-4013-9FBD-C98E04629620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFB261E-9BA9-4013-9FBD-C98E04629620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFB261E-9BA9-4013-9FBD-C98E04629620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFB261E-9BA9-4013-9FBD-C98E04629620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B63112C4-BEB9-4675-9C8E-650C2353249A}
+	EndGlobalSection
+EndGlobal
